@@ -16,3 +16,10 @@ class ContactUsView(FormView):
     def form_valid(self, form):
         form.send_mail()
         return super().form_valid(form)
+
+def home(request):
+    context = {
+        'background': 'jshine.jpg',
+        'view-name': 'home',
+    }
+    return render(request, 'home.html', context)
