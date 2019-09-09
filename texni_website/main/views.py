@@ -13,7 +13,7 @@ def home(request):
 
 def about_us(request):
     context = {
-        'background': 'jshine.jpg',
+        'background': 'amin.jpg',
     }
     return render(request, 'about_us.html', context)
 
@@ -27,28 +27,28 @@ def about_us(request):
 
 def team(request):
     context = {
-        'background': 'jshine.jpg',
+        'background': 'harvey.jpg',
     }
     return render(request, 'team.html', context)
 
 
 def case_studies(request):
     context = {
-        'background': 'jshine.jpg',
+        'background': 'cool-sky.jpg',
     }
     return render(request, 'case_studies.html', context)
 
 
 def careers(request):
     context = {
-        'background': 'jshine.jpg',
+        'background': 'magetron.jpg',
     }
     return render(request, 'careers.html', context)
 
 
 def events(request):
     context = {
-        'background': 'jshine.jpg',
+        'background': 'witching-hour.jpg',
     }
     return render(request, 'events.html', context)
 
