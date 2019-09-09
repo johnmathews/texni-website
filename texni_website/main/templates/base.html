@@ -20,26 +20,29 @@
 
   <body>
 
-    {% with 'images/'|add:background as image_static %}
-      <div style="background-image: url({% static image_static %})">
-    {% endwith %}
+      <div style="
+      {% with 'images/'|add:background as image_static %}
+        background-image: url({% static image_static %});
+      {% endwith %}
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      ">
+
       <div class="d-flex" id="wrapper">
 
         <!-- Sidebar -->
-        <div class="bg-light border-right" id="sidebar-wrapper">
-          <div class="sidebar-heading">Menu or logo</div>
+        <div class="" id="sidebar-wrapper">
+          <div class="bg-transparant sidebar-heading">Menu or logo</div>
           <div class="list-group list-group-flush">
-            <a href="/" class="list-group-item list-group-item-action bg-light">Home</a>
-            <a href="/overview" class="list-group-item list-group-item-action bg-light">Overview</a>
-            <a href="/about-us" class="list-group-item list-group-item-action bg-light">About Us</a>
-            <a href="/profile" class="list-group-item list-group-item-action bg-light">Profile</a>
-            <a href="/contact" class="list-group-item list-group-item-action bg-light">Contact Us</a>
-            <a href="/team" class="list-group-item list-group-item-action bg-light">Team</a>
-            <a href="/case-studies" class="list-group-item list-group-item-action bg-light">Case Studies</a>
-            <a href="/careers" class="list-group-item list-group-item-action bg-light">Careers</a>
-            <a href="/events" class="list-group-item list-group-item-action bg-light">Events</a>
-            <a href="/status" class="list-group-item list-group-item-action bg-light">Status</a>
-            <a href="/shortcuts" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
+            <a href="/" class="list-group-item-action {% if request.path == "/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}">Home</a>
+            <a href="/about-us" class="list-group-item-action {% if request.path == "/about-us/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}">About Us</a>
+            <a href="/contact-us" class="list-group-item-action {% if request.path == "/contact-us/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}">Contact Us</a>
+            <a href="/team" class="list-group-item-action {% if request.path == "/team/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}">Team</a>
+            <a href="/case-studies" class="list-group-item-action {% if request.path == "/case-studies/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}">Case Studies</a>
+            <a href="/careers" class="list-group-item-action {% if request.path == "/careers/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}">Careers</a>
+            <a href="/events" class="list-group-item-action {% if request.path == "/events/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}">Events</a>
           </div>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -47,7 +50,7 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
 
-          <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+          <nav class="navbar navbar-expand-lg navbar-light bg-transparant">
             <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

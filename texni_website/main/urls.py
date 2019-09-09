@@ -5,8 +5,11 @@ from main import views
 
 app_name = 'main'
 urlpatterns = [
-    path("about-us/", TemplateView.as_view(template_name="about_us.html"), name='about_us'),
-    #  path("", TemplateView.as_view(template_name="home.html"), name='home'),
     path("", views.home, name='home'),
+    path("about-us/", views.about_us, name='about_us'),
     path("contact-us/", views.ContactUsView.as_view(), name="contact_us"),
+    path("team/", views.team, name="team"),
+    path("case-studies/", views.case_studies, name="case_studies"),
+    path("careers/", views.careers, name="careers"),
+    path("events/", views.events, name="events"),
 ]

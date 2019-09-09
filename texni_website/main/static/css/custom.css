@@ -48,6 +48,16 @@ body {
   }
 }
 
+.list-group-item-active {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: transparant;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+
 /* sets base style for each page */
 html {
   -webkit-background-size: cover;
@@ -56,13 +66,9 @@ html {
   background-size: cover;
 }
 
-/* set background image per page */
-.home-bg {
-  background: url(images/amin.jpg) no-repeat center center fixed;
-}
-.about-bg {
-  background: url(images/about.bg.jpg) no-repeat center center fixed;
-}
-.contact-bg {
-  background: url(images/contact-bg.jpg) no-repeat center center fixed;
+
+
+
+.list-group-item.active {
+  background-color: transparant;
 }
