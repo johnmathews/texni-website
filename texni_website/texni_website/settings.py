@@ -130,7 +130,6 @@ STATICFILES_DIRS = [
 # location where django collect all static files
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
-
 if not DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_HOST_USER = "username"
@@ -143,7 +142,5 @@ else:
         "django.core.mail.backends.console.EmailBackend"
     )
 
-
-# djang-heroku setting
+# Activate djang-heroku - keep at bottom of settings.py
 django_heroku.settings(locals())
-
