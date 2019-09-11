@@ -1,1 +1,2 @@
-web: gunicorn texni_website.wsgi
+web: gunicorn --pythonpath texni_website texni_website.wsgi
+
