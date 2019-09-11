@@ -34,11 +34,13 @@ body {
 
 #wrapper {
   min-height: 100vh;
+  --sidebar-width: 5rem;
+  --sidebar-width-neg: calc(-1 * var(--sidebar-width));
 }
 
 #sidebar-wrapper {
   /* min-height: 100vh; */
-  margin-left: -12rem;
+  margin-left: var(--sidebar-width-neg);
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
@@ -56,7 +58,7 @@ body {
 }
 
 #sidebar-wrapper .list-group {
-  width: 12rem;
+  width: var(--sidebar-width);
 }
 
 #page-content-wrapper {
@@ -78,7 +80,7 @@ body {
   }
 
   #wrapper.toggled #sidebar-wrapper {
-    margin-left: -12rem;
+    margin-left: var(--sidebar-width-neg);
   }
 }
 
