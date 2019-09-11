@@ -44,17 +44,15 @@
       <div class="d-flex" id="wrapper">
 
         <!-- Sidebar -->
-        <div class="" id="sidebar-wrapper">
-          <div class="list-group list-group-flush lead">
-            
-            <a href="/" style="color: black" class="ist-group-item-action {% if request.path == "/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-home"></i>  Home</a>
-            <a href="/about-us" style="color: black" class="list-group-item-action {% if request.path == "/about-us/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-address-card"></i>  About Us</a>
-            <a href="/contact-us" style="color: black" class="list-group-item-action {% if request.path == "/contact-us/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-phone-volume"></i>  Contact Us</a>
-            <a href="/team" style="color: black" class="list-group-item-action {% if request.path == "/team/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-users"></i>  Team</a>
-            <a href="/case-studies" style="color: black" class="list-group-item-action {% if request.path == "/case-studies/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-search"></i>  Case Studies</a>
-            <a href="/careers" style="color: black" class="list-group-item-action {% if request.path == "/careers/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-user-md"></i>  Careers</a>
-            <a href="/events" style="color: black" class="h-auto list-group-item-action {% if request.path == "/events/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-calendar-alt"></i>  Events</a>
-          </div>
+        <div class="align-items-stretch bg-transparant list-group list-group-flush lead" id="sidebar-wrapper">
+          <a href="/" style="color: black" class="ist-group-item-action {% if request.path == "/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-home"></i></a>
+          <a href="/about-us" style="color: black" class="list-group-item-action {% if request.path == "/about-us/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-address-card"></i></a>
+          <a href="/contact-us" style="color: black" class="list-group-item-action {% if request.path == "/contact-us/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-phone-volume"></i></a>
+          <a href="/team" style="color: black" class="list-group-item-action {% if request.path == "/team/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-users"></i></a>
+          <a href="/case-studies" style="color: black" class="list-group-item-action {% if request.path == "/case-studies/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-search"></i></a>
+          <a href="/careers" style="color: black" class="list-group-item-action {% if request.path == "/careers/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-user-md"></i></a>
+          <a href="/events" style="color: black" class="h-auto list-group-item-action {% if request.path == "/events/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-calendar-alt"></i></a>
+          <a href="*" style="color: black" id="spacer" class="align-items-stretch list-group-item-action bg-light list-group-item"></a>
         </div>
         <!-- /#sidebar-wrapper -->
 

@@ -23,8 +23,21 @@ body {
     line-height: 3em /* set to text height */
 }
 
-#sidebar-wrapper {
+/* .sidebar{ */
+/*     min-height: calc(10vh - 50px); */
+/* } */
+
+#spacer {
+  overflow: hidden;
+  min-height: calc(100vh - 100%) !important;
+}
+
+#wrapper {
   min-height: 100vh;
+}
+
+#sidebar-wrapper {
+  /* min-height: 100vh; */
   margin-left: -12rem;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
