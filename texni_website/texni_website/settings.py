@@ -127,7 +127,7 @@ STATIC_URL = '/static/'
 # location where you will store your static files like bootstrap
 STATICFILES_DIRS = [
    os.path.join(BASE_DIR, "static"),
-
+]
 
 #  gzip functionality
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
