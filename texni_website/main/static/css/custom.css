@@ -3,6 +3,22 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: .512em 0;
+}
+
+h4, .h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#name {
+  margin-left: 12.5%;
+}
+
 body {
   overflow-x: hidden;
 }

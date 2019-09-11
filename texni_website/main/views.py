@@ -13,28 +13,28 @@ def home(request):
 
 def about_us(request):
     context = {
-        'background': 'grade-grey.jpg',
+        'background': 'harvey.jpg',
     }
     return render(request, 'about_us.html', context)
 
 
 def team(request):
     context = {
-        'background': 'harvey.jpg',
+        'background': 'moonlit.jpg',
     }
     return render(request, 'team.html', context)
 
 
 def case_studies(request):
     context = {
-        'background': 'moonlit.jpg',
+        'background': 'harvey.jpg',
     }
     return render(request, 'case_studies.html', context)
 
 
 def careers(request):
     context = {
-        'background': 'harvey.jpg',
+        'background': 'moonlit.jpg',
     }
     return render(request, 'careers.html', context)
 
@@ -54,7 +54,7 @@ class ContactUsView(FormView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['background'] ='jshine.jpg'
+        context['background'] ='moonlit.jpg'
         return context
 
 
