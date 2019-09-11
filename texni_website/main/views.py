@@ -6,23 +6,16 @@ from main import forms
 
 def home(request):
     context = {
-        'background': 'jshine.jpg',
+        'background': 'moonlit.jpg',
     }
     return render(request, 'home.html', context)
 
 
 def about_us(request):
     context = {
-        'background': 'amin.jpg',
+        'background': 'grade-grey.jpg',
     }
     return render(request, 'about_us.html', context)
-
-
-#  def contact(request):
-#      context = {
-#          'background': 'jshine.jpg',
-#      }
-#      return render(request, 'contact_form.html', context)
 
 
 def team(request):
@@ -34,21 +27,21 @@ def team(request):
 
 def case_studies(request):
     context = {
-        'background': 'cool-sky.jpg',
+        'background': 'moonlit.jpg',
     }
     return render(request, 'case_studies.html', context)
 
 
 def careers(request):
     context = {
-        'background': 'magetron.jpg',
+        'background': 'harvey.jpg',
     }
     return render(request, 'careers.html', context)
 
 
 def events(request):
     context = {
-        'background': 'witching-hour.jpg',
+        'background': 'harvey.jpg',
     }
     return render(request, 'events.html', context)
 

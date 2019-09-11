@@ -45,10 +45,14 @@
 
         <!-- Sidebar -->
         <div class="align-items-stretch bg-transparant list-group list-group-flush lead" id="sidebar-wrapper">
-          <a href="/" style="color: black" class="ist-group-item-action {% if request.path == "/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-home"></i></a>
-          <a href="/about-us" style="color: black" class="list-group-item-action {% if request.path == "/about-us/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-address-card"></i></a>
-          <a href="/contact-us" style="color: black" class="list-group-item-action {% if request.path == "/contact-us/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-phone-volume"></i></a>
-          <a href="/team" style="color: black" class="list-group-item-action {% if request.path == "/team/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-users"></i></a>
+        <a href="/" 
+         style="color: black" 
+         class="list-group-item-action {% if request.path == "/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item text-dark {% endif %}">
+        {% if request.path == "/" %}<i class="fa fa-lg fa-inverse fa-home"></i>{% else %} <i class="fa fa-lg  fa-home"></i> {% endif %}
+          </a>
+          <a href="/about-us" style="color: black" class="list-group-item-action {% if request.path == "/about-us/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item text-dark{% endif %}"><i class="fa fa-lg fa-address-card"></i></a>
+          <a href="/contact-us" style="color: black" class="list-group-item-action {% if request.path == "/contact-us/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item  text-dark{% endif %}"><i class="fa fa-lg fa-phone-volume"></i></a>
+          <a href="/team" style="color: black" class="list-group-item-action {% if request.path == "/team/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item  text-dark{% endif %}"><i class="fa fa-lg fa-users"></i></a>
           <a href="/case-studies" style="color: black" class="list-group-item-action {% if request.path == "/case-studies/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-search"></i></a>
           <a href="/careers" style="color: black" class="list-group-item-action {% if request.path == "/careers/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-user-md"></i></a>
           <a href="/events" style="color: black" class="h-auto list-group-item-action {% if request.path == "/events/" %}bg-transparant list-group-item-active border-right-0{% else %} bg-light list-group-item {% endif %}"><i class="fa fa-lg fa-calendar-alt"></i></a>
@@ -62,12 +66,12 @@
             <H1>Texni Consulting</H1>
             <button class="d-md-none btn btn-primary" id="menu-toggle">Toggle Menu</button>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0 dropdown-menu-right">
                 <li class="nav-item">
                   <a class="nav-link" href="mailto: abc@example.com">Email</a>
                 </li>
