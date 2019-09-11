@@ -117,18 +117,16 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/static-files/
+# location where django collect all static files
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
+# Static files (CSS, JavaScript, Images) https://docs.djangoproject.com/en/2.2/howto/static-files/
 STATIC_URL = '/static/'
 
 # location where you will store your static files like bootstrap
 STATICFILES_DIRS = [
    os.path.join(BASE_DIR, "static"),
-]
 
-# location where django collect all static files
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 if not DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
