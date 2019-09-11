@@ -1,1 +1,1 @@
-web: gunicorn texni_website/texni_website.wsgi
+web: gunicorn texni_website.wsgi
