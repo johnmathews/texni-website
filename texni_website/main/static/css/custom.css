@@ -15,6 +15,10 @@ h4, .h4 {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.border-3 {
+    border-width:3px !important;
+}
+
 #name {
   margin-left: 12.5%;
 }
@@ -45,22 +49,27 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-/* .sidebar{ */
-/*     min-height: calc(10vh - 50px); */
-/* } */
+.footer {
+  --footer-height: 50px;
+  height: var(--footer-height);
 
-#spacer {
-  overflow: hidden;
-  min-height: calc(100vh - 100%) !important;
+}
+
+.push {
+  height: 100px;
 }
 
 #wrapper {
-  min-height: 100vh;
-  --sidebar-width: 5rem;
-  --sidebar-width-neg: calc(-1 * var(--sidebar-width));
+  --min-height-b: calc(1 * 100vh)
+  min-height: calc(--min-height-b)
+  /* min-height: calc(100% - var(--footer-height)); */
+  /* width: 15rem; */
+  margin-bottom; -50px;
 }
 
 #sidebar-wrapper {
+  --sidebar-width: 15rem;
+  --sidebar-width-neg: calc(-1 * var(--sidebar-width));
   /* min-height: 100vh; */
   margin-left: var(--sidebar-width-neg);
   -webkit-transition: margin .25s ease-out;
@@ -70,6 +79,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   height: 100%;
+  width: var(--sidebar-width);
   top: 0;
   z-index: 1020;
 }
