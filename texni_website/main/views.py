@@ -13,7 +13,7 @@ def home(request):
 
 def about_us(request):
     context = {
-        'background': 'harvey.jpg',
+        'background': 'moonlit.jpg',
     }
     return render(request, 'about_us.html', context)
 
@@ -27,7 +27,7 @@ def team(request):
 
 def case_studies(request):
     context = {
-        'background': 'harvey.jpg',
+        'background': 'moonlit.jpg',
     }
     return render(request, 'case_studies.html', context)
 
@@ -41,7 +41,7 @@ def careers(request):
 
 def events(request):
     context = {
-        'background': 'harvey.jpg',
+        'background': 'moonlit.jpg',
     }
     return render(request, 'events.html', context)
 

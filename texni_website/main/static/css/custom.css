@@ -24,7 +24,12 @@ h4, .h4 {
 }
 
 #name {
-  margin-left: 12.5%;
+  /* margin-left: 12.5%; */
+  /* display: inline-block; */
+}
+
+#navbar-parent {
+  /* text-align: center; */
 }
 
 body {
@@ -53,19 +58,24 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.footer {
-  --footer-height: 50px;
-  height: var(--footer-height);
+/* .footer { */
+/*   --footer-height: 50px; */
+/*   [> height: var(--footer-height); <] */
+/*  */
+/* } */
 
+#sticky-footer {
+  flex-shrink: none;
 }
 
-.push {
-  height: 100px;
-}
+/* #all { */
+/*   min-height: 100%; */
+/* } */
 
 #wrapper {
   --min-height-b: calc(1 * 100vh)
-  min-height: calc(--min-height-b)
+  /* min-height: calc(--min-height-b); */
+  min-height: 100vh !important;
   /* min-height: calc(100% - var(--footer-height)); */
   /* width: 15rem; */
   margin-bottom; -50px;
@@ -86,6 +96,7 @@ body {
   width: var(--sidebar-width);
   top: 0;
   z-index: 1020;
+  margin-bottom: 20px;
 }
 
 #sidebar-wrapper .sidebar-heading {
@@ -104,6 +115,20 @@ body {
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
 }
+
+
+#logo {
+  width:400px;
+  /* margin:auto; */
+  padding-left:40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#content{
+  /* margin-left:17%; */
+}
+
 
 @media (min-width: 768px) {
   #sidebar-wrapper {

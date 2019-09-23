@@ -28,10 +28,7 @@
     </script>
 
   </head>
-
-  <body>
-
-      <div style="
+      <div id="all" style="
       {% with 'images/'|add:background as image_static %}
         background-image: url({% static image_static %});
       {% endwith %}
@@ -41,10 +38,48 @@
         background-size: cover;
       ">
 
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparant">
+      <div id="logo" ><img class="" src="{% static 'images/logo1.png' %}" alt="texni data consulting logo" width=80 height=80>
+      </div>
+      <!-- <div class="h1 text-light font-weight-light" id="name"> -->
+      <!--   Texni Consulting -->
+      <!-- </div> -->
+      <button class="d-md-none btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+      <button class="navbar-toggler mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 dropdown-menu-right">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="mailto: abc@example.com">Email</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="http://www.linkedin.com">LinkedIn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="http://www.twitter.com">Twitter</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              EN
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">EN</a>
+              <a class="dropdown-item" href="#">NL</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
       <div class="d-flex" id="wrapper">
 
         <!-- Sidebar -->
-        <div id="sidebar-wrapper" class=" mt-0 border-3 border-bottom border-light align-items-stretch bg-transparant list-group list-group-flush lead">
+        <div id="sidebar-wrapper" class=" mt-0 border-3 border-bottom border-top border-light align-items-stretch bg-transparant list-group list-group-flush lead">
 
         <span><a href="/" style="color: black" class="list-group-item-action {% if request.path == "/" %}bg-transparant list-group-item-active border-right-0 text-light {% else %} bg-light list-group-item text-dark {% endif %}">
           {% if request.path == "/" %}<i class="fa fa-lg fa-inverse fa-home"></i><span class="pl-3">Home</span>{% else %} <i class="fa fa-lg  fa-home"></i><span class="pl-3">Home</span>{% endif %}
@@ -80,39 +115,6 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
 
-          <nav class="navbar navbar-expand-lg navbar-light bg-transparant">
-            <div class="h1 w-100 text-light font-weight-light" id="name">
-              Texni Consulting
-            </div>
-            <button class="d-md-none btn btn-primary" id="menu-toggle">Toggle Menu</button>
-
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto mt-2 mt-lg-0 dropdown-menu-right">
-                <li class="nav-item">
-                  <a class="nav-link text-light" href="mailto: abc@example.com">Email</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" href="http://www.linkedin.com">LinkedIn</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" href="http://www.twitter.com">Twitter</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    EN
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">EN</a>
-                    <a class="dropdown-item" href="#">NL</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </nav>
 
           <div class="container-fluid">
             {% block content %}
@@ -126,21 +128,22 @@
         </div>
         <!-- /#page-content-wrapper -->
       </div>
-      <div class="push"></div>
+      <div id="push">
+      </div>
 
+      <!-- /#wrapper -->
+
+      </div>
       <!-- footer -->
       {% block footer %}
         <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
           <div class="container text-center">
-            <small>Copyright &copy; Your Website</small>
+            <small>Texni Data Consultancy | Copyright 2019 </small>
           </div>
         </footer>
       {% endblock %}
 
       <!-- /footer -->
-      <!-- /#wrapper -->
-
-      </div>
 
       <!-- Bootstrap core JavaScript -->
       <script src= {% static "jquery/jquery.js" %}></script>
