@@ -79,7 +79,7 @@
       <div class="d-flex" id="wrapper">
 
         <!-- Sidebar -->
-        <div id="sidebar-wrapper" class=" mt-0 border-3 border-bottom border-top border-light align-items-stretch bg-transparant list-group list-group-flush lead">
+        <div id="sidebar-wrapper" class="mt-0 border-3 border-bottom border-top border-light align-items-stretch bg-transparant list-group list-group-flush lead">
 
         <span><a href="/" style="color: black" class="list-group-item-action {% if request.path == "/" %}bg-transparant list-group-item-active border-right-0 text-light {% else %} bg-light list-group-item text-dark {% endif %}">
           {% if request.path == "/" %}<i class="fa fa-lg fa-inverse fa-home"></i><span class="pl-3">Home</span>{% else %} <i class="fa fa-lg  fa-home"></i><span class="pl-3">Home</span>{% endif %}
@@ -101,9 +101,9 @@
           {% if request.path == "/case-studies/" %}<i class="fa fa-lg fa-inverse fa-search"></i><span class="pl-3">Case Studies</span>{% else %} <i class="fa fa-lg fa-search"></i><span class="pl-3">Case Studies</span>{% endif %}
           </a>
 
-          <a href="/careers" style="color: black" class="list-group-item-action {% if request.path == "/careers/" %}bg-transparant list-group-item-active border-right-0 text-light {% else %} bg-light list-group-item {% endif %}">
-          {% if request.path == "/careers/" %}<i class="fa fa-lg fa-inverse fa-user-md"></i><span class="pl-3">Careers</span>{% else %} <i class="fa fa-lg fa-user-md"></i><span class="pl-3">Careers</span>{% endif %}
-          </a>
+          <!-- <a href="/careers" style="color: black" class="list-group-item-action {% if request.path == "/careers/" %}bg-transparant list-group-item-active border-right-0 text-light {% else %} bg-light list-group-item {% endif %}"> -->
+          <!-- {% if request.path == "/careers/" %}<i class="fa fa-lg fa-inverse fa-user-md"></i><span class="pl-3">Careers</span>{% else %} <i class="fa fa-lg fa-user-md"></i><span class="pl-3">Careers</span>{% endif %} -->
+          <!-- </a> -->
 
           <a href="/events" style="color: black" class="h-auto list-group-item-action {% if request.path == "/events/" %}bg-transparant list-group-item-active border-right-0 text-light {% else %} bg-light list-group-item {% endif %}">
           {% if request.path == "/events" %}<i class="fa fa-lg fa-inverse fa-calendar-alt"></i><span class="pl-3">Events</span>{% else %} <i class="fa fa-lg fa-calendar-alt"></i><span class="pl-3">Events</span>{% endif %}
@@ -115,21 +115,15 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
 
-
           <div class="container-fluid">
             {% block content %}
-              <div id="base">
-                <h1 class="mt-4">Texni Data</h1>
-                <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-                <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
-              </div>
             {% endblock %}
           </div>
         </div>
         <!-- /#page-content-wrapper -->
       </div>
-      <div id="push">
-      </div>
+      <!-- <div id="push"> -->
+      <!-- </div> -->
 
       <!-- /#wrapper -->
 

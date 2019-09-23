@@ -23,17 +23,9 @@ h4, .h4 {
     border-width:3px !important;
 }
 
-#name {
-  /* margin-left: 12.5%; */
-  /* display: inline-block; */
-}
-
-#navbar-parent {
-  /* text-align: center; */
-}
-
 body {
   overflow-x: hidden;
+  /* min-height: 100%; */
 }
 
 .list-group-item{
@@ -68,9 +60,9 @@ body {
   flex-shrink: none;
 }
 
-/* #all { */
-/*   min-height: 100%; */
-/* } */
+#all {
+  min-height: 92vh;
+}
 
 #wrapper {
   --min-height-b: calc(1 * 100vh)
