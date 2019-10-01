@@ -6,42 +6,42 @@ from main import forms
 
 def home(request):
     context = {
-        'background': 'moonlit.jpg',
+        'background': 'background_building.jpg',
     }
     return render(request, 'home.html', context)
 
 
 def about_us(request):
     context = {
-        'background': 'moonlit.jpg',
+        'background': 'background_paintedwall.jpg',
     }
     return render(request, 'about_us.html', context)
 
 
 def team(request):
     context = {
-        'background': 'moonlit.jpg',
+        'background': 'background_stainglass.jpg',
     }
     return render(request, 'team.html', context)
 
 
 def case_studies(request):
     context = {
-        'background': 'moonlit.jpg',
+        'background': 'background_stainglass.jpg',
     }
     return render(request, 'case_studies.html', context)
 
 
 def careers(request):
     context = {
-        'background': 'moonlit.jpg',
+        'background': 'background_paintedwall.jpg',
     }
     return render(request, 'careers.html', context)
 
 
 def events(request):
     context = {
-        'background': 'moonlit.jpg',
+        'background': 'background_building.jpg',
     }
     return render(request, 'events.html', context)
 
@@ -54,7 +54,7 @@ class ContactUsView(FormView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['background'] ='moonlit.jpg'
+        context['background'] ='background_building.jpg'
         return context
 
 
