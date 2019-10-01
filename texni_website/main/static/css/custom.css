@@ -26,6 +26,7 @@ h4, .h4 {
 body {
   overflow-x: hidden;
   /* min-height: 100%; */
+  font-size: 1.2rem;
 }
 
 .list-group-item{
